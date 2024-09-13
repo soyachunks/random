@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical places of India</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <style>
+        header{
+            position:fixed;
+            top: 0px;
+            left:5px;
+            right: 5px;
+            background-image: url('https://imgs.search.brave.com/xqY8qLKh4635rHg4qmJ_-ywcjIHuVkGbxm7XIiKKzPU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNi8w/OC8wNS8wOS8zMS9i/YW5uZXItMTU3MTg1/OF82NDAuanBn');
+            border-radius: 0px 0px 150px 150px;
+        }
+        h1{
+            text-align: center;
+            margin: 20px;
+            margin-top: 0px;
+            text-shadow: 3px 3px 3px black;
+            color: brown;
+            font-size: 50px;
+            font-family:cursive;
+        }
+        nav{
+            position: relative;
+            left:10%;
+            margin:20px;
+            margin-bottom: 0px;
+        }
+        a{
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px;
+            margin-bottom: 0px;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic; 
+            color:darkblue;
+        }
+        a:hover{
+            border:solid 2px black;
+            border-radius: 10px;
+            color: brown;
+        }
+        input{
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            color: black;
+            position: relative;
+            left: 70%;
+            top: -30px;
+        }
+        input::placeholder {
+            font-size: 14px;
+            color: black;
+        }
+        button{
+            position: relative;
+            left: 70%;
+            top: -28px;
+            padding: 5px;
+            font-size: larger;
+            border-radius: 5px;
+        }
+        footer{
+            background-color: rgb(54, 66, 76);
+            position:fixed;
+            bottom:5px;
+            left:400px;
+            right:400px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 20px;
+        }       
+        #name{
+            color:brown;
+            font-weight: bold;
+        }
+        
+        body{
+            background-image: url('https://imgs.search.brave.com/plVkxpj7BjaqO2kYsKo2vn66eyalPvMQ4vRGRUkIcGo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzE2Lzg4LzM3/LzM2MF9GXzExNjg4/Mzc4Nl93dWNrZnQx/c053MW91UWZKNkZ1/cXVabnhlYTNxQmx4/eS5qcGc');
+            background-size: cover;
+            margin-left: 7%;
+            margin-right: 7%;
+        }
+        #intro{
+            font-size: larger;
+            
+        }
+        #a{grid-area: a;}
+        #b{grid-area: b;}
+        #c{grid-area: c;}
+        #d{grid-area: d;}
+        #e{grid-area: e;}
+        #f{grid-area: f;}
+        #g{grid-area: g;}
+        #h{grid-area: h;}
+        #i{grid-area: i;}
+        #j{grid-area: j;}
+        #k{grid-area: k;}
+        #l{grid-area: l;}
+        #m{grid-area: m;}
+        #n{grid-area: n;}
+        #o{grid-area: o;}
+
+        #maindiv{
+            display: grid;
+            grid-template-areas: 'a b c' 'd e f' 'g h i' 'j k l' 'm n o';
+        }
+        #maindiv>div{
+            margin: 20px;
+            justify-content: space-between;
+        }
+        p{
+            color: aliceblue;
+            font-size: large;
+            font-style: italic;
+            text-align: center;
+        }
+        img{
+            width:330px;
+            border: solid 1px black;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 2px 2px 2px;
+        }
+        #a3{
+            display: none;
+        }
+        #a:hover #a3{
+            display: block;
+        }
+        #b3{
+            display: none;
+        }
+        #b:hover #b3{
+            display: block;
+        }
+        #c3{
+            display: none;
+        }
+        #c:hover #c3{
+            display: block;
+        }
+        #d3{
+            display: none;
+        }
+        #d:hover #d3{
+            display: block;
+        }
+        #e3{
+            display: none;
+        }
+        #e:hover #e3{
+            display: block;
+        }
+        #f3{
+            display: none;
+        }
+        #f:hover #f3{
+            display: block;
+        }
+        #g3{
+            display: none;
+        }
+        #g:hover #g3{
+            display: block;
+        }
+        #h3{
+            display: none;
+        }
+        #h:hover #h3{
+            display: block;
+        }
+        #i3{
+            display: none;
+        }
+        #i:hover #i3{
+            display: block;
+        }
+        #j3{
+            display: none;
+        }
+        #j:hover #j3{
+            display: block;
+        }
+        #k3{
+            display: none;
+        }
+        #k:hover #k3{
+            display: block;
+        }
+        #l3{
+            display: none;
+        }
+        #l:hover #l3{
+            display: block;
+        }
+        #m3{
+            display: none;
+        }
+        #m:hover #m3{
+            display: block;
+        }
+        #n3{
+            display: none;
+        }
+        #n:hover #n3{
+            display: block;
+        }
+        #o3{
+            display: none;
+        }
+        #o:hover #o3{
+            display: block;
+        }
+        
+        #text{
+            text-align: left;
+        }
+        #link{
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+</head>
+    
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Support</a>
+            <a href="">Contacts</a>
+        </nav>
+        <input type="search" placeholder="Search for content">
+        <button class="search-icon-btn">
+            <i class="fas fa-search"></i>
+        </button>
+        <br>
+        <h1>Historical Places Of India</h1>
+        
+    </header>
+    <body>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <p id="intro">India has many historical places, including monuments, temples, and forts, that reflect its culture and heritage:</p>
+        <div id="maindiv">
+            <div id="a">
+                <img id="a1" src="https://lh7-us.googleusercontent.com/ZQRDRLJGwe-m6RSowqXgDxHM1b3mIItki-uBjDluPIDhBVtjMko8bflswCQ693YWc_7R05JFNjPyUBmhCYlHDoJZw6U_wWOMJ9DXcyft_0bpiP_1z4Gsl7huNAcGX0psswPUIO88jmEHaRoOoou-pQ" width="300px">
+                <br>
+                <p id="a2">Victoria Memorial, Kolkata</p>
+                <p id="a3"> Constructed in honour of Queen Victoria, this iconic white marble structure is the most popular attraction in Kolkata. It is surrounded by a beautifully maintained garden with many statues and sculptures.  </p>
+            </div>
+            <div id="b">
+                <img id="b1" src="https://lh7-us.googleusercontent.com/B2zmHkFxoCjumxoeaIHAZ4CwfcHDxFFNugLQgyp8iAqLgNwwaNBc-s4ALZ6w-WdyOCfmU_CwWrQ55TGk_de1_VDLlwAno9VvkT0DGVfTGKnkuoOC3Jx8z5iQKGvRj8D9Oy9gaAtum9ZR-sw-W9riBQ">
+                <br>
+                <p id="b2">Agra Fort, Agra</p>
+                <p id="b3">This 16th-century historical fort was essentially a walled city that was built during the reign of Emperor Akbar. It boasts intricate artwork on marble and sandstone walls and is a medley of different architectural styles.</p>
+            </div>
+            <div id="c">
+                <img id="c1" src="https://lh7-us.googleusercontent.com/0ok5LCBmiioUwTpavyKDguR4QoTnyVLOFmoXAgfUjveBxNWgPXQ4aSMyLdzJsuRpryUakHdWOEOnzx3dH2cmapaXxOOWjbPAuh_dG4NBOtYcwinKhXQmThJfsoD5bwF3HxH5yekfXo9c-0jhpoCH1g">
+                <br>
+                <p id="c2">Fatehpur Sikri Fort, Agra</p>
+                <p id="c3">An architectural gem in red sandstone, Fatehpur Sikri Fort’s credit goes to the great Mughal Emperor Akbar. Some popular things to see within its walled premises include Buland Darwaza, Jama Masjid, Akbar’s residence, Panch Mahal, Ibadat Khana, and the famous courtier Birbal’s house. </p>
+            </div>
+            <div id="d">
+                <img id="d1" src="https://lh7-us.googleusercontent.com/6aO-X6NyfCBpqXMQJJs3DgIpqIJOe36luBzyLeOsSVMlWPqbXV_e6YacD0Ka10knNAZt0npcmbnQtDr6EYUWNsFgrFnwJ5GXeBS_TQR_hvsXDZmDU6DbF2eI0w0yL4y58EySNDFp_lPjj3XJASeQmA">
+                <br>
+                <p id="d2">Qutub Minar, Delhi</p>
+                <p id="d3">Qutub Minar, also known as Victory Tower, is one of the tallest monuments in Asia and the tallest brick minaret in the world, at 72.5m. Featuring beautiful carvings and intricate designs on marble and red sandstone, this architectural wonder is a photographer’s delight.</p>
+            </div>
+            <div id="e">
+                <img id="e1" src="https://lh7-us.googleusercontent.com/tRcOpMjyIqjXqrNBXxoUmxdBbBoNTSeYONIc0J27sJ2kqM4K-bPQtSQAKMkJ413NhmbTlwshP9C8SjCf6JXL1rPUDnJDw28tZXlRR6FeLuAsCMiKyCMqLZb7kLrQ9ofPc0ByivvM8DdqKKDoqcZMUg">
+                <br>
+                <p id="e2">Jama Masjid, Delhi</p>
+                <p id="e3">This architectural extravagance by the Mughal Emperor Shah Jahan is constructed with red sandstone and white marble. The focal points of the monument are its tall minarets, arched gateways, wide staircases, and a huge courtyard for prayers.</p>
+            </div>
+            <div id="f">
+                <img id="f1" src="https://lh7-us.googleusercontent.com/OBCZyXzcE01JL_BZINushz4nm4lDNGNcl4-k-5PoxZ265trAes6zkgiTGP2adSJ7hyJN3CkkcnTu8f7f0GAI5PtwI34KXb18bL71_ZbWExKUUwMbnP237feFX-gTakT8WvYM1Zegma-3ykqWnklyIg">
+                <br>
+                <p id="f2">Red Fort, Delhi</p>
+                <p id="f3">Constructed during the reign of Shah Jahan in the 17th century, Red Fort or Lal Qila, is one of the most popular historical buildings in India. The main highlights are its massive red sandstone walls, Mughal-style architecture, geometrical gardens, projecting balconies, and grand palaces and entertainment halls.</p>
+            </div>
+            <div id="g">
+                <img id="g1" src="https://lh7-us.googleusercontent.com/stByJfMnB4Jp25KW41EXKdcehvBdHYXBVzTzXETvGzTmHBsfnjifHYzKB-T0tD-0WZdLfu-bmDTDxbdfxXAYX_gvTEnRlyRVi6_SI9WqTJPJduWrtI57owXtOGuDMbdWJPyF1BqTxYE2EIXoRXM7VA">
+                <br>
+                <p id="g2">India Gate, Delhi</p>
+                <p id="g3">This iconic sandstone-granite arch gate is among the largest war memorials in the country. The beauty of this important monument is accentuated by the verdant lawns that surround it. </p>
+            </div>
+            <div id="h">
+                <img id="h1" src="https://lh7-us.googleusercontent.com/OFBFdeHIlBCVaT73LrLQxV_yl_HaJJR58IsjZ76Az2ZcB07IHHdUHRO8avnK3NPLuJg0-6l9dt2qHITeBAMkijrRQ6kdcFD-868DLgmifyetyro47Rv0fHDbjlcV4GoeOeASzNG2YMKyu0YanL_Cxg">
+                <br>
+                <p id="h2">Humayun’s Tomb, Delhi</p>
+                <p id="h3">Popularly known as the first garden tomb in the Indian subcontinent, this 16th-century monument was built by Emperor Humayun’s wife in memory of her husband. Its slavish double-storied gateway and 4 gardens with “Humayun ka Maqbara” in the centre make for an elegant statement. </p>
+            </div>
+            <div id="i">
+                <img id="i1" src="https://lh7-us.googleusercontent.com/l5qnnogA_Qk0X4rpqQTCvtYc7VCI4g3hghtIOWH1lXbJP0_YsxzzLPELDFk0GLT8hj7uOifCqcCMgtJJtgSYuNYSUtOL6uu0KJXN6F_62e6mOIuU6W2cGCcekVf5SweYjHe_jsCyxew4nfzc_bVCFQ">
+                <br>
+                <p id="i2">Golden Temple, Amritsar</p>
+                <p id="i3">Also known as Sri Harmandir Sahib, this beautiful religious place of the Sikh community is all about tranquillity, humanity, and brotherhood. The two-storied structure has a unique domed architecture, with its top half clad in pure gold and the other half built with white marble. </p>
+            </div>
+            <div id="j">
+                <img id="j1" src="https://lh7-us.googleusercontent.com/y0Dg6XH-biB2TON3y1BT3Nb4f99bkoz3pbJGusoVVm6YJJwmJ-O8ZS4PYU9txXwsdThODwIEYV3K6XGsSEy8QQJo6AYsFtixyW4AhDpKWv1sx3py7QrB7fWX0RNstt2m4PH62WABLukLqaSo7hIwNA">
+                <br>
+                <p id="j2">Amer Fort, Jaipur</p>
+                <p id="j3">Built in the 16th century by Maharaja Man Singh, Amer Fort is one of the most ancient monuments in India. The intricately carved walls and ceilings, four courtyards, beautifully designed entry gates in the palace, and vibrant paintings of Rajput rulers on the palace walls are the chief attractions here. </p>
+            </div>
+            <div id="k">
+                <img id="k1" src="https://lh7-us.googleusercontent.com/veEZz_5xznik4SZtNIdVZ8gT6E5AQ0f9hYUdLieYOpYPXpKYEBgCbm5XpPzsJec7qzRvyuLQwPDYCshk9J-jxfCTRCgOpEQwd8--ZOl41aiGDH9KnhhkDuW8TWaL14OuYh9oDdxEcr1zedVGewv8gQ">
+                <br>
+                <p id="k2">Jaisalmer Fort, Jaisalmer</p>
+                <p id="k3">Standing tall and proud in northwest Rajasthan, Jaisalmer Fort is one of the largest forts in the world. The main attraction of the fort is its sprawling yellow sandstone walls that shine bright like gold during daytime. 
+                </p>
+            </div>
+            <div id="l">
+                <img id="l1" src="https://lh7-us.googleusercontent.com/qYC7kDx_rEJv9n6uICiG_lQkh23h9Iscp2jHy0iRpaZji90esnxQj-_C9xj_-749ri6QaXZ9ugfs4zusYSjw_qfxILRXFaVVjmA-yd3fisWWHRTHgbAPF9thiXeI9jD_G-SR8orVwlMyO-YSyalejg">
+                <br>
+                <p id="l2">City Palace, Udaipur</p>
+                <p id="l3">An enchanting blend of European, Medieval and Chinese architectural styles, City Palace has beautiful courtyards, pavilions, corridors, rooms and hanging gardens. The 11 palaces with antique furniture, unique paintings, dazzling mirrors and ornamental tilework will leave you amazed.</p>
+            </div>
+            <div id="m">
+                <img id="m1" src="https://lh7-us.googleusercontent.com/5RoFNgGRosuhi4ftPGefAe6e2vuB7XhjH2u-feBwws11_65DCivHHQskssNE3H2-dIinj58rH6TMKTf2rZSaAzvYtk2CAfTi2PLh8VhVNZguMjhD5B3G5DK4zeLerduQT_eJR0wanoJhkQU2I0CGVw">
+                <br>
+                <p id="m2">Hawa Mahal, Jaipur</p>
+                <p id="m3">This 18th-century 5-storey building is a wonderful blend of Rajput, Islamic and Mughal architectural styles, which makes it totally Insta-worthy. Hawa Mahal offers stunning views of the City Palace and Jantar Mantar from the top, too.
+                </p>
+            </div>
+            <div id="n">
+                <img id="n1" src="https://lh7-us.googleusercontent.com/F8rht5S4ANegRgzLNNhWB2Wbw0lGXMKUt1HMcYbHhn6AQR9N_Peq0bI-X49rl5euycRHk3BO3dvtSzcT2aMTyxh0JKB8vk7CEHnuLTor9MSQ_SSDaFSTsj0_3OJqCxsG7eb4smU5QPG-EsH16x7cUQ">
+                <br>
+                <p id="n2">Gateway of India, Mumbai</p>
+                <p id="n3">This unique landmark is one of the most important monuments of India. It was constructed in the 20th century and has an Indo-Saracenic style of architecture. Apart from photographing the majestic gateway, you can enjoy the cool sea breeze, relish some delectable street foods, or go for a leisurely ferry ride. 
+                </p>
+            </div>
+            <div id="o">
+                <img id="o1" src="https://lh7-us.googleusercontent.com/lfLxbK0BwVb6468O8mKTyqCOT0RhT-X4s5ifCc2YPK-_1O82qWUml8Z4myr5xP4rYABJfrWgH9cGVrDbC757ecdT3ezmseyVBuYHFjPDqmlpdEpDgRMvN6D6svze5XMh8Tl0FycjvjVlIwRKmHJD2A">
+                <br>
+                <p id="o2">Charminar, Hyderabad</p>
+                <p id="o3">Built-in the 16th century, this popular mosque is a brilliant combination of Indo-Islamic architecture and subtle Persian elements. The arches, minarets and domes with stucco decorations lend a distinctive look to the monument and make it a major tourist attraction in the city.
+                </p>
+            </div>
+        </div>
+        <div id="credits">
+            <p id="text">Source:</p>
+            <a id="link" href="https://chrysalishigh.com/blog/student-corner/25-must-visit-historical-places-in-india/">chrysalishigh</a>
+        </div>
+        <br>
+        <hr>
+        <br><br><br><br><br><br><br><br><br>
+    </body>
+    
+    <footer>
+        Designed and Developed by <span id="name">Suyash Raj</span>
+    </footer>
+    
+</html>
